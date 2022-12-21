@@ -1,0 +1,3 @@
+blog---> it is a virtual envirnment
+miniblog---->it is the name of project
+blogapp---->it is the name of app 
