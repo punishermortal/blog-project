@@ -55,7 +55,7 @@
                         <td class="text-center">
                             <a href="{% url 'updatepost' post.id %}" class="btn btn-warning btn-sm">Edit</a>
                             
-                            {% comment %} jiske pass permision hoga delete ka wahi age jayega {% endcomment %}
+                            {% comment %} those have permision for delete they only {% endcomment %}
                             {% if perms.blogapp.delete_post %}
                                 <form action="{% url 'deletepost' post.id %}" method="post" class="d-inline">
                                     {% csrf_token %}

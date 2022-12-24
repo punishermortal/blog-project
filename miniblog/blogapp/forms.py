@@ -1,5 +1,5 @@
 from django import forms
-#usrcreationform and authoten(login) these form is given by djangoand ham use bas custamise kiye hai
+#usrcreationform and authoten(login) these form is given by djangoand we only customized it
 from django.contrib.auth.forms import UserCreationForm,AuthenticationForm,UsernameField
 from django.contrib.auth.models import User
 from django.utils.translation import gettext,gettext_lazy as _

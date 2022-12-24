@@ -9,8 +9,7 @@
           <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          {% comment %} previously it is like this=<a class="nav-link" href="#">About</a> {% endcomment %}
-          <a class="nav-link" href="{% url 'about' %}">About</a> {% comment %}  after the linking about page to navbar {% endcomment %}
+          <a class="nav-link" href="{% url 'about' %}">About</a>
           
         </li>
 
@@ -25,7 +24,7 @@
         <li class="nav-item">
           <a class="nav-link" href="{%url 'contact'%}">Contact</a>
         </li>
-        {% comment %} request.user is a built in variable in django jo ki current login user ko batata hai if no one login then anyumous user {% endcomment %}
+      
         {%if request.user.is_authenticated %}
           <li class="nav-item">
               <a class="nav-link" href="{%url 'dashboard'%}">Dashboard</a>
